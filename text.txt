@@ -1,0 +1,823 @@
+ 
+ 
+ 
+ 
+ 
+L.J. Institute of Engineering & Technology
+ 
+ 
+ 
+ 
+DECLARATION
+ 
+ 
+We hereby declare that the PSAR Reports, submitted along with the Project Report 
+for the project entitled 
+
+IOT Based Irrigation
+ 
+System
+
+submitted in partial 
+fulfillment for the degree of 
+Bachelor of Engineering 
+in 
+Electronics & 
+Communication Branch
+ 
+to Guja
+rat Technological University
+, 
+Ahmedabad 
+, 
+is a 
+bonafide record of the project work carried  out
+ 
+at
+ 
+L.J.
+ 
+Institute
+ 
+of
+ 
+Engineering
+ 
+&
+ 
+Technology
+ 
+under
+ 
+the
+ 
+supervision
+ 
+o
+f 
+ 
+Prof. Mosam Pandya
+ 
+and
+ 
+that
+ 
+no
+ 
+part
+ 
+of
+ 
+any
+ 
+of
+ 
+these
+ 
+PSAR
+ 
+reports
+ 
+has been directly 
+copied
+ 
+
+taken from any other source, without providing due reference.
+ 
+ 
+ 
+Sr. NO.
+ 
+Name
+ 
+Enrollment NO.
+ 
+1.
+ 
+Yash Bajaria
+ 
+170320111003
+ 
+2.
+ 
+Siddharth Nahar
+ 
+170320111034
+ 
+3.
+ 
+Devansh Shah
+ 
+170320111049
+ 
+4.
+ 
+Jainil Shah
+ 
+170320111051
+ 
+ 
+ 
+ 
+L.J. Institute of Engineering & Technology
+ 
+ 
+ 
+ 
+CERTIFICATE
+ 
+ 
+ 
+This is to certify that the PSAR reports, submitted along with the project entitled 
+
+IOT Based Irrigation System
+
+has been carried out by
+ 
+Yash Bajaria
+,
+ 
+Siddharth Nahar,
+ 
+Devansh
+ 
+Shah, 
+Jainil Shah
+ 
+under my guidance in 
+partial fulfillment for the degree of: 
+Bachelor of Engineering
+ 
+in 
+Electronics & 
+Communication Branch
+ 
+7
+th 
+Semester 
+of Gujarat Technological University, 
+Ahmadabad during the academic year 2020
+-
+21. 
+These students have successfully 
+completed PSAR activity under my guidance.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Internal Guide
+ 
+Head of the
+ 
+Department
+ 
+Prof.
+ 
+Mosam Pandya
+ 
+Prof. Mosam
+ 
+Pandya
+ 
+ 
+ 
+ 
+INDEX
+ 
+ 
+ 
+Sr. No.
+ 
+Topics
+ 
+1.
+ 
+A.E.I.O.U Summary
+ 
+2.
+ 
+Product Development Canvas
+ 
+3.
+ 
+Ideation
+ 
+Canvas
+ 
+4.
+ 
+Implementation Story
+ 
+ 
+1.)
+ 
+A.E.I.O.U.
+ 
+Summary:
+ 
+ 
+ 
+ 
+ 
+Abstract:
+ 
+ 
+ 
+ 
+
+ 
+Automation of farm activities  can
+  
+transform  agricultural domain  from 
+being manual  and  static  to  intelligent  and dynamic  leading  to higher 
+production with lesser human supervision. 
+Water management is paramount 
+in countries with water scarcity. This also affects agriculture, as a
+ 
+large 
+amount of water is dedicated to that use.
+ 
+ 
+
+ 
+Most of the farmers use large portions of farming land and it becomes very 
+difficult to reach and track every corner of the large land. Sometimes there is 
+a possibility of uneven water sprinkles. This resul
+t in the bad quality crops 
+which further leads to financial loses. In this using 
+IOT Based Irrigation 
+System 
+is helpful and ease of
+ 
+farming.
+ 
+ 
+
+ 
+ 
+We present a survey aimed at summarizing the current state of the art 
+regarding intelligent irrigation systems. 
+We determine the parameters that 
+are monitored in irrigation systems regarding water quantity and quality, soil 
+characteristics and weather conditions. We provide an overview of the most 
+utilized nodes and wireless technologies. Lastly, we will discuss the
+ 
+challenges and the best practices for the implementation of sensor
+-
+based 
+irrigation
+ 
+systems.
+ 
+ 
+
+ 
+The setup uses soil moisture sensors which measure the exact moisture level 
+in soil. This value enables the system to use appropriate quantity of water 
+which avo
+ids over/under irrigation. IOT is used to keep the farmers updated 
+about the status of
+ 
+sprinklers.
+ 
+ 
+ 
+Keywords
+:
+-
+ 
+Irrigation, IOT, Precision Agriculture, Soil Moisture Sensors, Micro
+-
+controller, GSM Module, Lora Module, Switches, Buttons.
+ 
+Aims & Objectives:
+ 
+ 
+ 
+
+ 
+Agriculture is the major backbone of Indian Economy. Most of the available 
+fresh water resources are used in Agriculture. The agricultural sector is one 
+of the most important economic resources in these countries adding to the 
+importance of
+ 
+managing well the available water resources to ensure the 
+continuing of this economical sector.
+ 
+ 
+
+ 
+Due to the recent advances in sensors for the implementation of irrigation 
+systems for agriculture and the evolution of WSN and IoT technologies that 
+can be a
+pplied in the development of these systems. In this survey, we are 
+going to provide an overview of the state of the research regarding irrigation 
+systems. We will determine the parameters that are monitored in irrigation 
+systems regarding water quantity an
+d quality, soil characteristics, weather 
+conditions, and fertilizer
+ 
+usage
+.
+ 
+ 
+
+ 
+In the recent years automated and semi
+-
+ 
+automated technologies been 
+deployed for irrigating the field which has replaced the traditional 
+Agricultural mechanism. The cloud and IOT 
+technology in recent year 
+entered agriculture and by using these two technologies the farmer is 
+increasing production and reducing cost. In this paper a system is discussed 
+which uses both cloud and IOT technologies for controlling the irrigation 
+system. T
+he system discussed comprises many elements for performing 
+specific
+ 
+task.
+ 
+ 
+
+ 
+For the next generation agriculture fields, data collected from sensors would 
+
+would uncover the new ways t
+hat tap the full potential of agriculture yield 
+and alleviate all the challenges that hinders the growth of the
+ 
+crop.
+ 
+2.)
+ 
+Ideation
+ 
+Canvas:
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+An ideation canvas is a rough whiteboard where ideas can be stretched 
+into any limits or 
+dimensions. Ideation session is not aimed at finding 
+solutions to the defined problem, but to define
+ 
+the best possible problem 
+and stretch out its possible scope. The ideation canvas is separated into 
+various 
+sections 
+such as
+ 
+users, activities, situation
+s, props.
+ 
+3.)
+ 
+Product Development
+ 
+Canvas:
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+The product Canvas is a strategic product planning tool that 
+allows you to quickly capture, describe, challenge, and pivot your 
+product strategy on just a single
+ 
+page.
+ 
+ 
+
+ 
+The Product Canvas has helped
+ 
+us to identify what are the top customer 
+
+solution, and what we really need to learn from our customers.
+ 
+Technologies Used So Far:
+ 
+ 
+ 
+ 
+ 
+
+ 
+The available traditio
+nal methods of irrigation are drip irrigation, sprinkler 
+system. The current irrigation methodology adopted employ uniform water 
+distribution which is not optimal. So accordingly technologies being applied 
+towards agricultural monitoring which is required 
+by
+ 
+farmers.
+ 
+ 
+
+ 
+Standalone monitoring station, Wireless Sensor based monitoring system 
+been developed which is composed of number of wireless sensor nodes and 
+a gateway. Agriculture Modernization that has already started by some of the 
+tech savvy farmers. For
+ 
+the next generation agriculture fields, data collected 
+from sensors would become the fertilizer to grow
+ 
+crops.
+ 
+ 
+
+ 
+In addition to employing technologies in monitoring the agriculture for 
+automating the irrigation system, there is need for some intelligence which 
+allows machines to apply some intelligence in interpreting agricultural data 
+captured and accordingly analyz
+e data towards predicting the output rather 
+than following traditional rule based algorithm. So towards this, Artificial 
+intelligence plays a key role which allows devices to learn without being 
+explicitly
+ 
+programmed.
+ 
+ 
+
+ 
+Most of the system just captures the 
+data from the field and accordingly 
+controls the sprinkler valve for watering the field. In none of these systems, 
+there exists intelligence which analyses the real time data based on past 
+experience for irrigating the
+ 
+field.
+ 
+ 
+Literature Survey:
+ 
+ 
+
+ 
+Existing
+ 
+Systems:
+ 
+ 
+A.
+ 
+Traditional Agricultural
+ 
+Monitoring
+ 
+B.
+ 
+ICT Based Agricultural
+ 
+Monitoring
+ 
+C.
+ 
+Paddy Growth Monitoring
+ 
+System
+ 
+D.
+ 
+Machine Learning in Agricultural
+ 
+Monitoring
+ 
+Materials and Methods:
+ 
+ 
+ 
+ 
+ 
+
+ 
+The 
+IOT Based Irrigation System 
+which is capable of 
+automating the 
+irrigation process by analyzing the moisture of soil and the climate condition 
+(like raining). It provides water supply at the right time, in right quantity and 
+
+ 
+growth.
+ 
+ 
+
+ 
+By 
+using sensors like moisture, rain, etc. water supply for irrigation can be 
+managed easily by analyzing the condition of soil and climate. Soil moisture 
+sensors smartly measure the soil moisture and based on that data, field is 
+getting irrigated automatical
+ly with less human interventions. The complete 
+data of moisture is accessible to the farmers at distance on the mobile
+ 
+also.
+ 
+ 
+
+ 
+Intelligent IOT based automa
+ted irrigation system where the
+ 
+moisture 
+sensors deployed in field communicate to micr
+ocontroller. The sensed 
+moisture 
+value is then transmitted using serial communication to 
+microcontroller
+. 
+Micro
+ 
+Controller then
+ 
+sends this field data to another 
+microcontroller through the means of GSM module or LoRa module.
+ 
+ 
+
+ 
+The system here co
+nsists of following components.
+Firstly the 
+Microcontroll
+er part where Soil Moisture 
+deployed in soil is connected to 
+Microcontroller which gives the moisture 
+ou
+tput based on soil condition
+. 
+The data received by Microcontroller are then
+ 
+manipulated based on Custom 
+Algorithm
+.
+ 
+ 
+
+ 
+Custom A
+lgorithm been employed for 
+monitorin
+g
+ 
+the soil condition
+ 
+based 
+on Moisture level
+. The predicted output is then used for sending the control 
+signal via the serial communication to Microcontroller for controlling water 
+pump for watering the field
+ 
+accordingly.
+ 
+Circuit Diagram
+ 
+&
+ 
+Flow Chart
+:
+ 
+ 
+ 
+
+ 
+Micro
+-
+Controller
+ 
+
+ 
+LoRa
+ 
+Module
+ 
+
+ 
+GSM
+ 
+Module
+ 
+
+ 
+Soil Moisture
+ 
+Sensor
+ 
+
+ 
+TFT 
+Display
+ 
+Board
+ 
+
+ 
+Power
+ 
+Supply
+ 
+
+ 
+Potentiometer
+ 
+
+ 
+
+ 
+
+ 
+Battery Management
+ 
+System
+ 
+
+ 
+Buttons
+ 
+
+ 
+Buzzer
+ 
+ 
+Circuit Diagram
+ 
+&
+ 
+Flow Chart
+:
+ 
+ 
+ 
+ 
+Methodology:
+ 
+ 
+ 
+
+ 
+ 
+Water sprinkler control was achieved by setting a threshold value at which 
+irrigation should begin. When the sensors switched on the moisture content 
+is low. The threshold values depend on the type of
+ 
+soil used. API for the 
+Internet of Things that enables you to collect, store, analyze, visualize, and 
+act on data from sensors or Micro
+-
+ 
+controllers. Lora Module is also used 
+here to enhance the range capacity of the
+ 
+system.
+ 
+ 
+
+ 
+The values obtained  through 
+ 
+sensors  enable  the  system  to  switch the 
+sprinkler on and off. A farmer can remotely monitor the irrigation process on 
+the farm. 
+The soil moisture, rain and the control unit act accordingly to 
+sensed data and control the water
+ 
+pump.
+ 
+ 
+ 
+Outcomes:
+ 
+ 
+
+ 
+The Intelligent IOT based Irrigation System developed involves Micro
+-
+ 
+Controller 
+as processing unit. In a
+ddition Moisture
+ 
+Sensors deployed in soil 
+for sensing the 
+soil moisture level. These sensors are conne
+cted to 
+microcontroller where sensed information sent to the microcontroller for 
+action. In addition to these sensors, the actuator for water pump also 
+connected to sensors for pumping the
+ 
+water.
+ 
+ 
+
+ 
+The System is not only used in field by the farmers but can
+ 
+be used to solve 
+other problems where continuous monitoring of water supply is required like 
+in a garden, or a personal small field, or in the watering the stadium when 
+necessary etc. It optimally controls the water pump and highly reduced the 
+electricity
+ 
+consumption of farm and the production of farm is increased 
+because of controlled water supply to
+ 
+crops.
+ 
+ 
+ 
+ 
+4.)
+ 
+Implementation
+ 
+Story:
+ 
+ 
+ 
+ 
+Conclusion & Future Perspects:
+ 
+ 
+
+ 
+Agricultural monitoring is very much needed to reduce much of human labor 
+and at the same time minimize on water usage. Lot of system been 
+developed employing Wireless Sensor in monitoring and predicting the soil 
+condition for irrigating the field. In addi
+tion machine learning techniques 
+been employed towards crop yield and crop disease prediction
+ 
+only.
+ 
+ 
+
+ 
+IOT Based Irrigation System presented over here results in complete 
+automated irrigation system employing IOT Technologies where devices 
+communicate among 
+themselves in predicting the soil condition for watering 
+the field. This proves that the use of water can be diminished and hence 
+water will not be wasted as compared to the present records. It reduces the 
+human resources. This irrigation system will be fe
+asible and cost effective 
+for optimizing water resources for agricultural production. The irrigation 
+system can be adjusted to a variety of specific crop needs and requires 
+minimum maintenance.
+ 
+ 
+
+ 
+Furthermore, the Internet link allows the supervision through
+ 
+mobile 
+telecommunication devices, such as a Smartphone. Besides the monetary 
+savings in water use, the importance of the preservation of this natural 
+resource justify the use of this kind of irrigation systems. Project concludes 
+that automation of irrigat
+ion system will become easy and comfortable for 
+farmers to operate the irrigation 
+at 
+remote location i.e. from their native. 
+This will save time, avoid problem of continuous vigilance, help in sustain 
+the productivity and increasing the
+ 
+yield.
+ 
+ 
+
+ 
+In Future, 
+Intelligent IOT based Irrigation system can be extended not just 
+for irrigating the field with water but also for deciding on spraying 
+appropriate chemicals for proper growth of crop. The same work can be 
+extended by looking into water level in tank before
+ 
+irrigating the field. 
+Lastly the data security and integrity of agricultural data can be secured 
+while transmitting for analysis towards prediction and sending the control 
+signal for
+ 
+actuation.
+ 
